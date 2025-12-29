@@ -25,7 +25,7 @@ In other words, **any** usage of `RemoteFunction:InvokeServer` can be intercepte
 Load it in your script or exploit environment. For example:
    ```lua
    -- In your script:
-   local Hook = loadstring(game:HttpGet('https://github.com/hookpsycho/Hook/raw/refs/heads/main/Hook.lua'))()
+   local Hook = loadstring(game:HttpGet('https://github.com/ubt5/Hook/raw/refs/heads/main/Hook.lua'))()
    ```
 That’s it! Once loaded, all the hooked functions are automatically replaced.
 
@@ -59,7 +59,7 @@ You can override the public `namecall` function to see or modify arguments. For 
 
 ```lua
 -- Load the handler
-local Hook = loadstring(game:HttpGet('https://github.com/hookpsycho/Hook/raw/refs/heads/main/Hook.lua'))()
+local Hook = loadstring(game:HttpGet('https://github.com/ubt5/Hook/raw/refs/heads/main/Hook.lua'))()
 
 namecall = function(...)
     local method = Hook:GetNameCallMethod()
@@ -94,7 +94,7 @@ Below is a minimal usage example you might drop into your script after loading `
 
 ```lua
 -- Load the handler
-local Hook = loadstring(game:HttpGet('https://github.com/hookpsycho/Hook/raw/refs/heads/main/Hook.lua'))()
+local Hook = loadstring(game:HttpGet('https://github.com/ubt5/Hook/raw/refs/heads/main/Hook.lua'))()
 
 -- Example: track all 'FireServer' events
 namecall = function(...)
